@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOOM Eternal Short Film</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="header-content">
+            <h1>DOOM</h1>
+            <img src="files/weww.png" alt="Doom Image" class="header-image">
+        </div>
+    </header>
+
+    <!-- Main Content Block -->
+    <section class="main-block" style="background-image: url('files/maxresdefault.jpg');">
+        <div class="main-content">
+            <div class="text-content">
+                <div class="black-rectangle">
+                  <h2>DOOM ETERNAL<br>
+SHORT FILM</h2>
+                  <p>Данный короткий анимамационный фильм крайне сжато пересказывает события основной игры DOOM ETERNAL.
+                    Познакомьтесь с главным</p>
+                  <p>героем - Палачом Рока и его любимым супер-дробовиком.</p>
+                </div>
+            </div>
+            <img src="files/fb0650ff38f84d526883336ff5119dc0.png" alt="Doom Character" class="character-image">
+        </div>
+    </section>
+
+    <!-- Divider -->
+    <div class="divider"></div>
+
+    <!-- Impressions Block -->
+    <section class="impressions-block" style="background-image: url('files/Doom-Eternal_Makyr_Wallpaper_5654x2763-01.jpg');">
+        <h2>ВПЕЧАТЛЕНИЯ</h2>
+        <div class="black-rectangle">
+          <p>При создании данного видеоролика я столкнулся</p>
+          <p>с множеством проблем и трудностей, которые предлагает программа Adobe Animate. Думаю, что писать очередной комментарий о том, насколько там всё неудобно и криво, смысла нет, т.к это уже сделали мои одногруппеики. Самое главное, что я смог сделать видеоролик на интересующую меня тематику и остался более-менее доволен результатом.</p>
+<p>&nbsp;В какой-то степени, я даже получил некое удовольствие от того, чем я занимался.</p>
+        </div>
+    </section>
+
+    <!-- Divider -->
+    <div class="divider"></div>
+
+    <!-- Video Block -->
+    <section class="video-block" style="background-image: url('files/hk1uhwoji9q71.png');">
+        <video width="560" height="315" controls>
+            <source src="files/PERFECTO_LA_FINALE.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>sylrog © All rights reserved.</p>
+    </footer>
+<script>
+    const video = document.querySelector('video');
+
+    // Событие при воспроизведении видео
+    video.addEventListener('play', () => {
+        video.classList.add('playing');
+    });
+
+    // Событие при паузе видео
+    video.addEventListener('pause', () => {
+        video.classList.remove('playing');
+    });
+</script>
+</body>
+</html>

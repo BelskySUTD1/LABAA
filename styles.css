@@ -1,0 +1,175 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: white;
+    background-color: #000;
+}
+
+/* Header */
+header {
+    background-color: #000;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.header-content h1 {
+    font-size: 28px;
+    color: white;
+}
+
+.header-image {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+}
+
+/* Main Block Styles */
+.main-block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    position: relative;
+    min-height: 100vh;
+}
+
+.main-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.text-content {
+    flex: 1;
+    max-width: 60%;
+    padding-right: 20px;
+}
+
+.black-rectangle {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 80px; /* Увеличили отступы в 2 раза */
+    border-radius: 10px;
+}
+
+.black-rectangle h2 {
+    font-size: 80px; /* Увеличили размер шрифта заголовка в 2 раза */
+    margin-bottom: 40px;
+}
+
+.black-rectangle p {
+    font-size: 44px; /* Увеличили размер шрифта текста в 2 раза */
+    line-height: 1.8;
+    word-wrap: break-word;
+}
+
+.character-image {
+    max-width: 600px; /* Увеличили размер изображения персонажа в 2 раза */
+    height: auto;
+    object-fit: contain;
+}
+
+/* Divider */
+.divider {
+    height: 4px;
+    background-color: #ff4500;
+    margin: 30px 0;
+}
+
+/* Impressions Block Styles */
+.impressions-block {
+    padding: 40px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    min-height: 100vh;
+}
+
+.impressions-block h2 {
+    text-align: center;
+    font-size: 80px; /* Увеличили размер шрифта заголовка в 2 раза */
+}
+
+.black-rectangle {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 80px; /* Увеличили отступы */
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.black-rectangle p {
+    font-size: 44px; /* Увеличили размер шрифта текста в 2 раза */
+    line-height: 1.8;
+}
+
+/* Video Block Styles */
+.video-block {
+    padding: 60px;
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+}
+
+video {
+    width: 95%;
+    height: auto;
+    opacity: 0.5;
+    transition: opacity 0.5s ease;
+}
+
+video.playing {
+    opacity: 1;
+}
+
+/* Footer */
+footer {
+    background-color: #000;
+    padding: 20px;
+    text-align: center;
+}
+
+footer p {
+    color: white;
+    font-size: 14px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .main-block {
+        flex-direction: column;
+    }
+
+    .header-image {
+        width: 40px;
+        height: 40px;
+    }
+
+    .text-content {
+        max-width: 100%;
+        padding-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .character-image {
+        max-width: 100%;
+    }
+}
